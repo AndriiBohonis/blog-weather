@@ -15,7 +15,7 @@ const SIZE_CONFIG = {
     text: "text-base text-[#78787A] line-clamp-3 md:line-clamp-4",
   },
   md: {
-    wrapper: "grid grid-cols-1 gap-4 md:gap-6",
+    wrapper: "grid grid-cols-1 gap-4",
     title: "text-2xl md:text-2xl font-bold mb-2",
     text: "text-[#78787A] line-clamp-3",
   },
@@ -34,8 +34,8 @@ export default function PostCard({ post, size = "lg" }: PostCardProps) {
         className="w-full rounded-md"
       />
       <div>
-        <p className="text-[#ADB8C8]">{`${formatDate(post.publishedAt)} · ${post.readTime} min read`}</p>
-        <h2 className={config.title}>{post.title}</h2>
+        <p className="text-[#ADB8C8] mb-2">{`${formatDate(post.publishedAt)} · ${post.readTime} min read`}</p>
+        <h3 className={config.title}>{post.title}</h3>
         <p className={config.text}>{post.description}</p>
       </div>
     </article>
