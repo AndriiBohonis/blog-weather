@@ -12,12 +12,12 @@ const SIZE_CONFIG = {
   lg: {
     wrapper: "grid grid-cols-1 md:grid-cols-2 gap-4",
     title: "text-xl md:text-4xl lg:text-5xl font-bold mb-4",
-    text: "text-base text-gray-600 line-clamp-3 md:line-clamp-4",
+    text: "text-base text-[#78787A] line-clamp-3 md:line-clamp-4",
   },
   md: {
     wrapper: "grid grid-cols-1 gap-4 md:gap-6",
     title: "text-2xl md:text-2xl font-bold mb-2",
-    text: " text-[#78787A] line-clamp-3",
+    text: "text-[#78787A] line-clamp-3",
   },
 } as const;
 

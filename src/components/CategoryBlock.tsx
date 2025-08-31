@@ -60,7 +60,7 @@ export const CategoryBlock: FC<CategoryProps> = ({
             return (
               <div key={`banner-group-${i}`}>
                 {itemsChunk.length > 0 && (
-                  <div className={`grid ${gridColsClass} gap-4 mb-4`}>
+                  <div className={`grid ${gridColsClass} gap-6 md:gap-8 mb-4`}>
                     {itemsChunk.map(post => (
                       <PostCard key={post.id} size={size} post={post} />
                     ))}
@@ -72,7 +72,7 @@ export const CategoryBlock: FC<CategoryProps> = ({
           })}
 
           {category.items?.slice(lastIndex).length > 0 && (
-            <div className={`grid ${gridColsClass} gap-4 mb-4`}>
+            <div className={`grid ${gridColsClass} gap-6 md:gap-8 mb-4`}>
               {category.items.slice(lastIndex).map(post => (
                 <PostCard key={post.id} size={size} post={post} />
               ))}

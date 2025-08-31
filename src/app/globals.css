@@ -5,10 +5,9 @@
   --foreground: #171717;
 }
 @theme {
-  --color-accent-green: #04BF94;
-  --color-green-transparent: #04BF9429;
-  --color-accent-gray: #91A0B6;
-
+  --color-accent-green: #04bf94;
+  --color-green-transparent: #04bf9429;
+  --color-accent-gray: #91a0b6;
 }
 
 @theme inline {
@@ -32,11 +31,7 @@ body {
 }
 
 .background-gradient {
-  background: linear-gradient(
-          83.7deg,
-          #CFEDE6 0%,
-          #8CDECBd4 100%
-  );
+  background: linear-gradient(83.7deg, #cfede6 0%, #8cdecbd4 100%);
 }
 
 .app-container {
