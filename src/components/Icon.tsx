@@ -6,6 +6,7 @@ import Search from "@/icons/search.svg";
 import Arrow from "@/icons/arrow.svg";
 import NewBadge from "@/icons/new_badge.svg";
 import Menu from "@/icons/menu.svg";
+import X from "@/icons/x.svg";
 import { SVGProps } from "react";
 
 const icons = {
@@ -15,6 +16,7 @@ const icons = {
   arrow: Arrow,
   new_badge: NewBadge,
   menu: Menu,
+  x: X,
 };
 
 export type IconName = keyof typeof icons;

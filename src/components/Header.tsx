@@ -43,7 +43,11 @@ export default function Header() {
           </button>
           <Icon className="hidden md:block" name="profile" />
           <button onClick={() => setIsOpen(!isOpen)}>
-            <Icon className="md:hidden" name="menu" />
+            {isOpen ? (
+              <Icon className="md:hidden text-accent-gray" name="x" />
+            ) : (
+              <Icon className="md:hidden" name="menu" />
+            )}
           </button>
         </div>
       </header>
