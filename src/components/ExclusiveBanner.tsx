@@ -21,8 +21,9 @@ export const ExclusiveBanner: FC = () => {
           </button>
         </div>
       </div>
+      <div className="hidden lg:block w-[350px]" />
       <Image
-        className="hidden md:block absolute -top-2 -right-2"
+        className="hidden lg:block absolute -top-2 -right-2"
         src="/images/banner-2.png"
         alt="Get unlimited access to exclusive articles"
         width={350}
