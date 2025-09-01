@@ -27,7 +27,7 @@ export const SearchBanner: FC<SearchBannerProps> = ({ query, setQuery }) => {
   }, []);
 
   return (
-    <div className="flex w-full justify-between rounded-xl bg-green-transparent my-6 md:my-8 lg:my-12">
+    <div className="flex w-full justify-between rounded-2xl bg-green-transparent my-6 md:my-8 lg:my-12">
       <div className="p-4 md:p-10 lg:p-14">
         <h3 className="text-2xl lg:text-[2rem] text-accent-green mb-2 font-bold">
           Stay always tuned with planting trends

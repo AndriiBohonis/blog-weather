@@ -4,7 +4,7 @@ import Icon from "@/components/Icon";
 
 export const ExclusiveBanner: FC = () => {
   return (
-    <div className="w-full background-gradient flex justify-between rounded-md my-8 relative">
+    <div className="w-full background-gradient flex justify-between rounded-2xl my-6 mg:my-10 lg:my-14 relative">
       <div className="p-6 flex flex-col gap-4 md:gap-6">
         <Icon name="logo" />
         <div>
@@ -23,7 +23,7 @@ export const ExclusiveBanner: FC = () => {
       </div>
       <div className="hidden lg:block w-[350px]" />
       <Image
-        className="hidden lg:block absolute -top-2 -right-2"
+        className="hidden lg:block absolute -top-2 -right-3"
         src="/images/banner-2.png"
         alt="Get unlimited access to exclusive articles"
         width={350}
