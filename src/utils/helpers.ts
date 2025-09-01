@@ -9,10 +9,7 @@ export const formatDate = (date: string | Date) => {
 };
 
 export const groupByCategory = (items: BlogPost[]): GroupedCategory[] => {
-  const map = new Map<
-    string,
-    { title: string; slug: string; items: BlogPost[] }
-  >();
+  const map = new Map<string, GroupedCategory>();
 
   for (const item of items) {
     const key = item.category.slug;
