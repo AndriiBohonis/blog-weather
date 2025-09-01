@@ -8,6 +8,8 @@
   --color-accent-green: #04bf94;
   --color-green-transparent: #04bf9429;
   --color-accent-gray: #91a0b6;
+  --color-gray-300: #ADB8C8;
+  --color-gray-500: #78787A;
 }
 
 @theme inline {

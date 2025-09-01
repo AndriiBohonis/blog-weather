@@ -58,7 +58,7 @@ export default function Home({ initialPosts }: HomeProps) {
             />
           ))
         ) : (
-          <p className="text-center text-gray-400 mt-8">No blogs found</p>
+          <p className="text-center text-accent-gray mt-8">No blogs found</p>
         )}
       </div>
     </main>
