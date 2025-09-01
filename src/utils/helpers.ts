@@ -28,12 +28,3 @@ export const groupByCategory = (items: BlogPost[]): GroupedCategory[] => {
 
   return Array.from(map.values());
 };
-
-export const debounce = <T>(
-  value: T,
-  delay: number,
-  callback: (val: T) => void
-) => {
-  const handler = setTimeout(() => callback(value), delay);
-  return () => clearTimeout(handler);
-};
