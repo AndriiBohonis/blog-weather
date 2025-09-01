@@ -4,8 +4,10 @@ import { FC, ReactNode } from "react";
 import { GroupedCategory } from "@/types/post.type";
 
 interface BannerConfig {
+  id: number;
   component: ReactNode;
   after: number;
+  slug: string;
 }
 
 interface CategoryProps {
@@ -52,13 +54,13 @@ export const CategoryBlock: FC<CategoryProps> = ({
       )}
       {category.items?.length ? (
         <>
-          {banners.map((banner, i) => {
+          {banners.map(banner => {
             const itemsChunk =
               category.items?.slice(lastIndex, banner.after) || [];
             lastIndex = banner.after;
 
             return (
-              <div key={`banner-group-${i}`}>
+              <div key={banner.id}>
                 {itemsChunk.length > 0 && (
                   <div className={`grid ${gridColsClass} gap-6 md:gap-8 mb-4`}>
                     {itemsChunk.map(post => (

@@ -13,6 +13,7 @@ type HomeProps = {
 };
 const banners = [
   {
+    id: 1,
     after: 6,
     component: <ExclusiveBanner />,
     slug: "interesting",
